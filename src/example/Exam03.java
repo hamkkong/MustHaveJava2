@@ -14,6 +14,9 @@ public class Exam03
 	    System.out.println(check3);
 	    System.out.println(1>2);    //연산 결과 출력 
 
+	    
+	    
+	    
 	}
 
 }

@@ -12,6 +12,7 @@ public class Exam05
 			dNum = dNum + 0.1;
      	}
 		System.out.println(dNum);
+		
 
 	}
 

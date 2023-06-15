@@ -12,6 +12,8 @@ public class Exam04
 		double result = num1+num2;
 		System.out.println(result);
 
+		
+		
 	}
 
 }

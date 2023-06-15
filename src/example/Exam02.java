@@ -16,6 +16,7 @@ public class Exam02
 	   System.out.println(ch2);
 	   System.out.println(ch3);
 	   System.out.println(ch4);
+	   
 	}
 
 }
