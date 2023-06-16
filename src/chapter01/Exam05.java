@@ -1,4 +1,4 @@
-package example;
+package chapter01;
 
 public class Exam05
 {
