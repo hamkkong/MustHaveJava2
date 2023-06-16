@@ -1,27 +1,21 @@
 package replit;
 
-public class Exam09
-{
+public class Exam09 {
 
-	public static void main(String[] args)
-	{
-		for (int num =1; num <=20; num = num + 1)
-	      {
-	        //짝수이면 이후 실행을 건너뛰기
-	        if(num % 2 == 0)
-	        {
-	           continue;
-	        }
-	        // 특정한 조건이 되면 멈추기
-	    if (num > 10)
-	    {
-	     break;
+    public static void main(String[] args) {
+	for (int num = 1; num <= 20; num = num + 1) {
+	    // 짝수이면 이후 실행을 건너뛰기
+	    if (num % 2 == 0) {
+		continue;
 	    }
-	      System.out.println(num);
+	    // 특정한 조건이 되면 멈추기
+	    if (num > 10) {
+		break;
 	    }
-	     //break로 멈추면 여기로 실행 이동
-	  System.out.println("반복문 종료");
-
+	    System.out.println(num);
 	}
+	// break로 멈추면 여기로 실행 이동
+	System.out.println("반복문 종료");
 
+    }
 }

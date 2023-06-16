@@ -1,10 +1,8 @@
 package replit;
 
-public class Exam06
-{
+public class Exam06 {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		// 반복문 : while, for
 	    System.out.print(2 * 1 + " ");
 	    System.out.print(2 * 2 + " ");
@@ -19,8 +17,7 @@ public class Exam06
 
 	    System.out.println("===================");
 	    // 위이 반복에서 뒤의 자리 정수만 변하게 처리
-	    for (int i = 1; i < 10; i = i + 1)
-	      {
+	    for (int i = 1; i < 10; i = i + 1) {
 	        System.out.print(2*i+" ");
 	      }
 	      System.out.println();
