@@ -7,3 +7,4 @@ npm-debug.log*
 
 # Dependency directotries 
 node_modules/
+.DS_Store
