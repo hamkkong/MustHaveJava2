@@ -1,6 +1,6 @@
 package chapter05;
 
-public class Exam01 {
+public class Exam01_if {
 
     public static void main(String[] args) {
 
