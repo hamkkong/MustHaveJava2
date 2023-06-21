@@ -1,6 +1,6 @@
 package chapter05;
 
-public class Exam08_Dowhile {
+public class Exam08_DoWhile {
 
     public static void main(String[] args) {
 	

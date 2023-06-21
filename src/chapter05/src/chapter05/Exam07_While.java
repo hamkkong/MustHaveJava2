@@ -1,6 +1,6 @@
 package chapter05;
 
-public class Exam07_while {
+public class Exam07_While {
 
     public static void main(String[] args) {
 	

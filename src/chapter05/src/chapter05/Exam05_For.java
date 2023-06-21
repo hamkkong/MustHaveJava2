@@ -1,6 +1,6 @@
 package chapter05;
 
-public class Exam05_for {
+public class Exam05_For {
 
     public static void main(String[] args) {
 	
