@@ -23,7 +23,7 @@ public class Exam12_ArrayCopy {
 	   System.out.print(arr2[i] + " ");
 	System.out.println();
 
-	//배열 arr1을 arr3로 부분 복사
+	//배열 arr2를 arr3로 부분 복사
 	int[] arr3 = Arrays.copyOfRange(arr2, 2, 5);
 	
 	// arr3 출력
