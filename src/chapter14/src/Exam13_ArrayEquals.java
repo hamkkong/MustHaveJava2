@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Exam03_ArrayEquals {
+public class Exam13_ArrayEquals {
 
     public static void main(String[] args) {
 	
