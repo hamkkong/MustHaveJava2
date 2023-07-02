@@ -5,7 +5,7 @@ public class Exam06_ExceptionThrow {
 	myMethod2(n, 0);
     }
     
-    public static void mymethod2(int n1, int n2) {
+    public static void myMethod2(int n1, int n2) {
 	
 	int r = n1 / n2; //예외 발생 지점 
     }
