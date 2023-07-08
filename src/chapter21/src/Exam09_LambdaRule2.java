@@ -14,8 +14,8 @@ public class Exam09_LambdaRule2 {
 	System.out.println(num);
 	
 	
-	unit = (a,b) -> a * b;
-	System.out.println(unit.calc(10, 20));
+	unit = (a,b) -> a * b;  // 뒤쪽 중괄호와 return 생략 가능 
+	System.out.println(unit.calc(10, 20)); 
 
     }
 
