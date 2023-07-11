@@ -36,7 +36,7 @@ public class Exam14_SyncArrayList3 {
 	pool.shutdown();
 	pool.awaitTermination(100, TimeUnit.SECONDS);
 	
-	System.out.println(list);
+	  System.out.println(list);
     }
 
 }
