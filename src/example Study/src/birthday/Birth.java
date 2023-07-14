@@ -60,7 +60,7 @@ public class Birth {
     }
 
 
-   void printHumanBirth() {  //메서드 사용해서 바로 불러오기 
+   void printHumanBirth() {  //메서드 생성해서 바로 불러오기 
        
        System.out.println(getName()+ "의 생년월일");
        System.out.println(getYear() + " 년 " + getMonth() +" 월 "+ getDay()+"일");
