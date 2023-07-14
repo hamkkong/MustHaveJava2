@@ -11,7 +11,12 @@ public abstract class BirthExample {
     System.out.println(iu.getBirth());
     System.out.println(mingyung.getBirth());
     System.out.println(haeri.getBirth());
-
+    System.out.println("---------------------------------");  //게터, 세터로 불러온것
+  
+    
+    iu.printHumanBirth();
+    mingyung.printHumanBirth();
+    haeri.printHumanBirth();      // get, set 메서드를 작성해서 불러온것 
 }
 
 }
