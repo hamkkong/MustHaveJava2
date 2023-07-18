@@ -1,8 +1,9 @@
 
 public class MethodTest {
-    void varTest(int a) {
+    int varTest(int a) {
 	
 	a++;
+	return a;
     }
 
     public static void main(String[] args) {
@@ -11,7 +12,8 @@ public class MethodTest {
 	
 	MethodTest m1 = new MethodTest();
 	
-	m1.varTest(a);
+	 
+	a = m1.varTest(a);
 	System.out.println(a);
 
     }
