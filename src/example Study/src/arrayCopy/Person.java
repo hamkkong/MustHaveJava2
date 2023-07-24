@@ -1,6 +1,7 @@
 package arrayCopy;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Person{
     
@@ -12,7 +13,7 @@ public class Person{
 	Age = age;
     }
     
-    public String getname() {
+    public String getName() {
 	return Name;
     }
     
@@ -28,7 +29,22 @@ public class Person{
 	this.Age = age;   // this. 를 사용해도 되고 생략해도 된다. 
     }
     
- 
+    
+   @Override
+   public boolean equals(Object o) {
+       if (this == o)
+	   return true;
+       if (o == null || getClass() != o.getClass())
+	   return false;
+       Person person = (Person) o;
+       return Objects.equals(Name, person.getName()) && Objects.equals(Age, person.getAge());
+       
+       }
+   @Override
+   public int hashCode() {
+	   return Objects.hash(Name, Age);
+   }
+   
     public static void main(String[] args) {
 	Person[] personArray1 = new Person[] {
 		new Person("둘리", 20),
@@ -37,7 +53,7 @@ public class Person{
 	
 	Person[] personArray2 = new Person[] {
 		new Person("둘리", 20),
-		new Person("또치", 30),
+		new Person("또치", 100),
 	};
 	
 	System.out.println("Arrays.equals() 메서드의 결과 : " + 
