@@ -11,7 +11,7 @@ public class ExThrow {
 	    System.out.println("클래스가 존재하지 않음.");
 	}
 	
-    }
+    }  //method1과 method2 는 같이 섞여있으면 안됨 - 중괄호를 분리해서 작성할것 !!! 
     
     public void method2() throws ClassNotFoundException {
 	    Class clazz = Class.forName("java.lang.String22");
