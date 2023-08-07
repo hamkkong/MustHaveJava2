@@ -6,7 +6,8 @@ public class ListTest {
 	// 새 리스트를 작성
 	List<String> l1 = new ArrayList<>();
 	List<String> l2 = Arrays.asList("one","two");
-	List<String> l3 = List.of("three","four");
+	Set<String>  l3 = Set.of("three", "four");
+
 	
 	//리스트에 데이터 추가 
 	l1.addAll(l2);
