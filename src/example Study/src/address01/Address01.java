@@ -26,6 +26,7 @@ public class Address01 {
 	// 파일에서 주소록 데이터 로드 (파일 존재하는 경우에만)
 	try (FileInputStream fis = new FileInputStream("user.ser");
 	ObjectInputStream ois = new ObjectInputStream(fis)){
+    
 	address01.phoneBookMap = (Map<String, PhoneInfo>) ois.readObject();
 
       } // 파일을 찾을수 없거나 역직렬화에 문제가 있는 경우 빈 주소록으로 시작함 

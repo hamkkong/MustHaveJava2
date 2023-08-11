@@ -4,38 +4,29 @@ import java.io.*;
 
 public class InputOutputExample {
 
-    public static void main(String[] args)throws IOException {
-     try {	
-	InputStream in = System.in;
-	InputStreamReader reader = new InputStreamReader(in);
-	
-	OutputStream out = System.out;
-	OutputStreamWriter writer = new OutputStreamWriter(out);
-	
-	char cdata[] = new char[2];
-	int byteRead = reader.read(cdata);
-	
-	if (byteRead > 0) {
-	    	
-	int IcData = cdata[0] - '0';  // char 형 변수를 int형 변수로 변환할 때 사용 
-	
-	writer.write("입력받은 값 :");
-	writer.write(cdata);
-	writer.write("\n");
-	writer.write("입력받은 첫번째 값 + 10 :");
-	writer.write(Integer.toString(IcData + 10)); //int 형 변수를 String으로 변환 
-	writer.write("\n");
-	
-	
-	System.out.println("######### 결과 #########");
-	
-	}
-	writer.flush();
-	writer.close();  // close()내부에서 자동으로 flush()호출됨 
-	
-	}catch(IOException e) {
-	    e.printStackTrace();
-	}
-    }
+    /*
+     * InputStreamReader 로 입력받는 경우에는 배열을 어떻게 주느냐에 따라 2개 이상의 값을 받을 수 있음
+     */
+    public static void main(String[] args) throws IOException {
+        InputStream in = System.in;
+        InputStreamReader reader = new InputStreamReader(in);
 
+        OutputStream out = System.out;
+        OutputStreamWriter writer = new OutputStreamWriter(out);
+
+        char cdata[] = new char[2]; // 이제는 char 를 기본형으로 받을 수 있고, 2개 이상의 값을 배열을 통해 받아올수 있다.
+        reader.read(cdata);
+
+        int IcData = cdata[0] - '0'; // 배열이기 때문에 char 로 받은 값을 int로 변환하여 계산하고 싶은 경우 이처럼 사용해야한다.
+
+        writer.write("입력받은 값 : ");
+        writer.write(cdata);
+        writer.write("\n");
+        writer.write("입력받은 첫번째 값 + 10 : ");
+        writer.write(IcData + 10 + "\n"); // 입력받은 첫번째 값 +10
+
+        System.out.println("####### 결과 #######");
+        writer.flush();  // 이 매서드를 통해 출력
+        writer.close();
+    }
 }
